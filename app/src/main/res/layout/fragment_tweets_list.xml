@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:descendantFocusability="beforeDescendants"
+    android:focusableInTouchMode="true">
+
+    <RelativeLayout
+        android:id="@+id/search_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="@dimen/search_header_layout_marging_top"
+        android:paddingLeft="@dimen/search_header_layout_padding_left"
+        android:paddingRight="@dimen/search_header_layout_padding_right">
+
+        <Button
+            android:id="@+id/search"
+            android:theme="@style/MaterialButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="@dimen/search_button_marging_top"
+            android:text="@string/fragment_search_tweets_button_text" />
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/search_input_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/search"
+            android:layout_alignParentLeft="true"
+            app:errorEnabled="true">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/search_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/search_tweets_fragment_search_input_hint"
+                android:maxLines="1"
+                android:inputType="text"
+                android:imeOptions="actionDone|flagNoExtractUi"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/tweets"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/tweets_recyclerview_margin_top"
+        android:layout_below="@id/search_header" />
+
+    <RelativeLayout
+        android:id="@+id/empty_state_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/tweets_recyclerview_margin_top"
+        android:layout_below="@id/search_header"
+        android:paddingLeft="@dimen/search_header_layout_padding_left"
+        android:paddingRight="@dimen/search_header_layout_padding_right"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/hint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/empty_state_margin_top"
+            android:layout_centerInParent="true"
+            android:text="@string/empty_state_hint_message"
+            style="@style/EmptyStateHint" />
+
+        <TextView
+            android:id="@+id/no_results"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/empty_state_margin_top"
+            android:layout_above="@id/hint"
+            android:text="@string/empty_state_no_result_message"
+            style="@style/EmptyStateNoResult" />
+
+        <ImageView
+            android:id="@+id/not_happy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/no_results"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/ic_not_happy"
+            android:contentDescription="@null" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

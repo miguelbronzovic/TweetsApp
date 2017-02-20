@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Twitter Search App</string>
+    <string name="message_token_obtained">OAuth2 Token obtained</string>
+    <string name="main_activity_progress_dialog_message">Getting bearer token... please wait</string>
+    <string name="search_tweets_fragment_search_input_hint">Search input</string>
+    <string name="search_tweets_fragment_progress_dialog_message">Loading tweets...</string>
+    <string name="search_tweets_fragment_error_input_layout">Input query is required</string>
+    <string name="error_message_general">Oops, something wrong happened, please try again</string>
+    <string name="fragment_search_tweets_button_text">Search</string>
+    <string name="empty_state_no_result_message">No tweets were found based on your input</string>
+    <string name="empty_state_hint_message">Try to search by using hash tags or by doing a more general search</string>
+</resources>

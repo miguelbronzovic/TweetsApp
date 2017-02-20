@@ -1,0 +1,25 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="tweet_item_layout_padding">10dp</dimen>
+    <dimen name="profile_image_width">60dp</dimen>
+    <dimen name="profile_image_height">60dp</dimen>
+    <dimen name="tweet_item_info_layout_margin_left">10dp</dimen>
+    <dimen name="text_margint_top">10dp</dimen>
+    <dimen name="media_image_width">300dp</dimen>
+    <dimen name="media_image_height">270dp</dimen>
+    <dimen name="search_header_layout_padding_left">10dp</dimen>
+    <dimen name="search_header_layout_padding_right">10dp</dimen>
+    <dimen name="search_header_layout_marging_top">5dp</dimen>
+    <dimen name="search_button_marging_top">5dp</dimen>
+    <dimen name="tweets_recyclerview_margin_top">15dp</dimen>
+    <dimen name="tweet_item_name_text_size">14sp</dimen>
+    <dimen name="tweet_item_screenname_text_size">12sp</dimen>
+    <dimen name="tweet_item_created_text_size">11sp</dimen>
+    <dimen name="tweet_item_text_size">14sp</dimen>
+    <dimen name="empty_state_margin_top">20dp</dimen>
+    <dimen name="empty_state_no_result_text_size">16sp</dimen>
+    <dimen name="empty_state_hint_text_size">15sp</dimen>
+
+</resources>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:padding="@dimen/tweet_item_layout_padding">
+
+    <ImageView
+        android:id="@+id/profile_image"
+        android:layout_width="@dimen/profile_image_width"
+        android:layout_height="@dimen/profile_image_height"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:contentDescription="@null" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/profile_image"
+        android:layout_marginLeft="@dimen/tweet_item_info_layout_margin_left"
+        android:layout_alignParentTop="true">
+
+        <LinearLayout
+            android:id="@+id/header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2">
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                style="@style/TwitterItemName" />
+
+            <TextView
+                android:id="@+id/screen_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.8"
+                style="@style/TwitterItemScreenName" />
+
+            <TextView
+                android:id="@+id/created"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.2"
+                android:gravity="right|center_vertical"
+                style="@style/TwitterItemCreated" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/header"
+            android:layout_marginTop="@dimen/text_margint_top"
+            android:gravity="left|top"
+            style="@style/TwitterItemText" />
+
+        <ImageView
+            android:id="@+id/media_image"
+            android:layout_width="@dimen/media_image_width"
+            android:layout_height="@dimen/media_image_height"
+            android:layout_below="@id/text"
+            android:layout_marginTop="5dp"
+            android:visibility="gone"
+            android:contentDescription="@null" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

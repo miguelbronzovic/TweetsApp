@@ -1,0 +1,49 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    <style name="TwitterItem">
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:textSize">@dimen/tweet_item_text_size</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+    <style name="TwitterItemName" parent="TwitterItem">
+        <item name="android:maxLines">1</item>
+        <item name="android:textSize">@dimen/tweet_item_name_text_size</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="TwitterItemScreenName" parent="TwitterItem">
+        <item name="android:maxLines">1</item>
+        <item name="android:textSize">@dimen/tweet_item_screenname_text_size</item>
+    </style>
+    <style name="TwitterItemCreated" parent="TwitterItem">
+        <item name="android:maxLines">1</item>
+        <item name="android:textSize">@dimen/tweet_item_created_text_size</item>
+    </style>
+    <style name="TwitterItemText" parent="TwitterItem">
+
+    </style>
+    <style name="EmptyStateNoResult">
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:textSize">@dimen/empty_state_no_result_text_size</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:gravity">center</item>
+    </style>
+    <style name="EmptyStateHint">
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:textSize">@dimen/empty_state_hint_text_size</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="MaterialButton" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorButtonNormal">@color/colorAccent</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+</resources>
